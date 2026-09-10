@@ -1,6 +1,6 @@
-import importlib.metadata
+from cs336_systems.modules import flashattention_autograd_function_pytorch,flashattention_autograd_function_triton
 
-try:
-    __version__ = importlib.metadata.version("cs336-systems")
-except importlib.metadata.PackageNotFoundError:
-    pass
+__all__ = [
+    "flashattention_autograd_function_pytorch",
+    "flashattention_autograd_function_triton",
+]
